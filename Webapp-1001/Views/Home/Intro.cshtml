@@ -10,30 +10,38 @@
     <div>
         <p>This is a paragraph</p>
     </div>
-        
+
     <div>
-        <form method="post">
+        <form id="sumForm" method="post">
             <div>
-                <label for = "number1">Number 1</label>
-                <input type = "number" id = "number1" name = "number1" />
+                <label for="number1">Number 1</label>
+                <input type="number" id="number1" name="number1" />
             </div>
 
             <div>
-                <label for = "number2">Number 2</label>
-                <input type = "number" id = "number2" name = "number2" />
+                <label for="number2">Number 2</label>
+                <input type="number" id="number2" name="number2" />
             </div>
 
             <div>
-               <label for = "output">Result</label>
-               <output id = "output" name = "output"></output>
+                <label for="output">Result</label>
+                <output id="output" name="output"></output>
             </div>
 
             <div>
-                <button type = "submit">Submit</button>
+                <button type="button" onclick="calculateSum()">Calculate Sum</button>
             </div>
-            
         </form>
-    </div>   
-     
+    </div>
+
     </center>
+
+    <script>
+        function calculateSum() {
+            var number1 = parseInt(document.getElementById("number1").value);
+            var number2 = parseInt(document.getElementById("number2").value);
+            var sum = number1 + number2;
+            document.getElementById("output").value = sum;
+        }
+    </script>
 }
