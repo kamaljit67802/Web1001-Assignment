@@ -1,37 +1,39 @@
-<!-- Intro.cshtml -->
 @{
-    ViewData["Title"] = "Introduction";
+    ViewData["Title"] = "Intro Page";
 }
 
-@section IntroSection
-{
-<div>
-    <h3 style="background-color:lightblue;text-align:center">
-       
-        Kamaljit Kaur
-           
-    </h3>
-</div>
-<center>
-<div>
-    <p>This is introduction page</p>
+@section DemoSection {
+    <div>
+        <h3><center>Kamaljit Kaur</center></h3>
     </div>
-<div>
-    <form method="post">
-        <label for="input1">Input 1:</label>
-        <input type="number" id="input1" name="input1" required>
-        <br>
-       
-        <label for="input2">Input 2:</label>
-        <input type="number" id="input2" name="input2" required>
-        <br>
-        <label for="output">Output:</label>
-        <output id="output" name="output"></output>
-        <br>
-        <input type="submit" value="Submit">
-    </form>
+    <center>
+    <div>
+        <p>This is a paragraph</p>
+    </div>
+        
+    <div>
+        <form method="post">
+            <div>
+                <label for = "number1">Number 1</label>
+                <input type = "number" id = "number1" name = "number1" />
+            </div>
 
-</div>
+            <div>
+                <label for = "number2">Number 2</label>
+                <input type = "number" id = "number2" name = "number2" />
+            </div>
+
+            <div>
+               <label for = "output">Result</label>
+               <output id = "output" name = "output"></output>
+            </div>
+
+            <div>
+                <button type = "submit">Submit</button>
+            </div>
+            
+        </form>
+    </div>   
+     
     </center>
-
 }
